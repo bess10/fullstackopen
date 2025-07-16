@@ -1,10 +1,11 @@
 ```mermaid
 sequenceDiagram
+participant user
 participant browser
 participant server
-participant user
 
-user->>form: click button save
+
+user->>browser: click on the save button on the form
 browser->>server: POST https://fullstack-exampleapp.herokuapp.com/new_note
 activate server
 server-->>browser: HTTP 302 Found
