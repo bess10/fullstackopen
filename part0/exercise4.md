@@ -2,6 +2,7 @@
 sequenceDiagram
 participant browser
 participant server
+participant user
 
 user->>form: click button save
 browser->>server: POST https://fullstack-exampleapp.herokuapp.com/new_note
@@ -11,8 +12,6 @@ browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
   activate server
   server-->>browser: HTML document
   deactivate server
-  
-Note rigth_of browser: the browser reloads the page
 
 browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
   activate server
