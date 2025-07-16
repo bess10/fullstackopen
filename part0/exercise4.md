@@ -12,7 +12,7 @@ browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
   server-->>browser: HTML document
   deactivate server
   
-Note rigth of browser: the browser reloads the page
+Note rigth_of browser: the browser reloads the page
 
 browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
   activate server
