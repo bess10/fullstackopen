@@ -7,8 +7,8 @@ participant server
 
 user->>browser: click on the save button on the form
 browser->>server: POST https://fullstack-exampleapp.herokuapp.com/new_note
-activate server
-server-->>browser: HTTP 302 Found
+  activate server
+  server-->>browser: HTTP 302 Found
 ## servidor solicitad una redirección y el navegador recarga la página
 browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
   activate server
