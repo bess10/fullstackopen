@@ -9,6 +9,7 @@ user->>browser: click on the save button on the form
 browser->>server: POST https://fullstack-exampleapp.herokuapp.com/new_note
 activate server
 server-->>browser: HTTP 302 Found
+servidor solicitad una redirección, el navegador vuelve a cargar la página, y provoca tres solicitudes
 browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
   activate server
   server-->>browser: HTML document
